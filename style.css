@@ -1,0 +1,29 @@
+#outerbox {
+    text-align: center;
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 2.1em;
+}
+
+#intro {
+    font-size: 1.1em;
+}
+
+#iLabel {
+    font-size: 1.1em;
+}
+
+#inputText {
+    font-size: 1em;
+}
+
+#output {
+    font-size: 2.5em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    white-space: initial;
+    word-wrap: break-word;
+}
