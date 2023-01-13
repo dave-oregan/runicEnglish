@@ -3,13 +3,14 @@
   <head>
     <title>English Runes</title>
     <link rel=stylesheet href=style.css>
+    <link rel="shortcut icon" href=as_mask.png>
   </head>
   <body>
     <div id=outerbox>
         <div id=english>
-          <h1>English Runes</h1>
+          <h1>English to Anglo-Saxon Rune Converter</h1>
           <form>
-              <p id=intro>What would it be like if we still used a runic script, and not a latin one?</p>
+              <p id=intro>What would it be like if English still used a runic script, and not a latin one?</p>
               <p id=iLabel>Enter a word or phrase:</p>
               <input type=text id=inputText onkeyup=convertToRunes()>
           </form>
@@ -18,7 +19,7 @@
     </div>
     <script>
       const runeMap = {
-          'th' : 'ᚦ', 'ee' : 'ᛇ', 'ng' : 'ᛜ', 'ah' : 'ᚫ', 'ea' : 'ᛠ', 'qu' : 'ᛢ', 'cw' : 'ᛢ', 'st' : 'ᛥ',
+          'th' : 'ᚦ', 'ng' : 'ᛝ', 'ae' : 'ᛇ', 'ea' : 'ᛠ', 'qu' : 'ᛢ', 'cw' : 'ᛢ', 'st' : 'ᛥ',
           'a': 'ᚪ', 'b': 'ᛒ', 'c': 'ᚳ', 'd': 'ᛞ',
           'e': 'ᛖ', 'f': 'ᚠ', 'g': 'ᚷ', 'h': 'ᚻ',
           'i': 'ᛁ', 'j': 'ᛡ', 'k': 'ᛣ', 'l': 'ᛚ',
@@ -26,7 +27,7 @@
           'q': 'ᛢ', 'r': 'ᚱ', 's': 'ᛋ', 't': 'ᛏ',
           'u': 'ᚢ', 'v': 'ᚡ', 'w': 'ᚹ', 'x': 'ᛉ',
           'y': 'ᚣ', 'z': 'ᚴ',
-          'TH' : 'ᚦ', 'EE' : 'ᛇ', 'NG' : 'ᛜ', 'AH' : 'ᚫ', 'EA' : 'ᛠ', 'QU' : 'ᛢ', 'CW' : 'ᛢ', 'ST' : 'ᛥ',
+          'TH' : 'ᚦ', 'NG' : 'ᛝ', 'AE' : 'ᛇ', 'EA' : 'ᛠ', 'QU' : 'ᛢ', 'CW' : 'ᛢ', 'ST' : 'ᛥ',
           'A': 'ᚪ', 'B': 'ᛒ', 'C': 'ᚳ', 'D': 'ᛞ',
           'E': 'ᛖ', 'F': 'ᚠ', 'G': 'ᚷ', 'H': 'ᚻ',
           'I': 'ᛁ', 'J': 'ᛡ', 'K': 'ᛣ', 'L': 'ᛚ',
@@ -34,8 +35,8 @@
           'Q': 'ᛢ', 'R': 'ᚱ', 'S': 'ᛋ', 'T': 'ᛏ',
           'U': 'ᚢ', 'V': 'ᚡ', 'W': 'ᚹ', 'X': 'ᛉ',
           'Y': 'ᚣ', 'Z': 'ᚴ',
-          'Th' : 'ᚦ', 'Ee' : 'ᛇ', 'Ng' : 'ᛜ', 'Ah' : 'ᚫ', 'Ea' : 'ᛠ', 'Qu' : 'ᛢ', 'Cw' : 'ᛢ', 'St' : 'ᛥ',
-          'tH' : 'ᚦ', 'eE' : 'ᛇ', 'nG' : 'ᛜ', 'aH' : 'ᚫ', 'eA' : 'ᛠ', 'qU' : 'ᛢ', 'cW' : 'ᛢ', 'sT' : 'ᛥ',
+          'Th' : 'ᚦ', 'Ng' : 'ᛝ', 'Ae' : 'ᛇ', 'Ea' : 'ᛠ', 'Qu' : 'ᛢ', 'Cw' : 'ᛢ', 'St' : 'ᛥ',
+          'tH' : 'ᚦ', 'nG' : 'ᛝ', 'eA' : 'ᛇ', 'eA' : 'ᛠ', 'qU' : 'ᛢ', 'cW' : 'ᛢ', 'sT' : 'ᛥ',
           '-' : '-'
       };
 
