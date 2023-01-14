@@ -1,6 +1,17 @@
+@font-face {
+    font-family: Druckschrift;
+    src: url('font/DeutscheDruckschrift.ttf');
+}
+
+@font-face {
+    font-family: Transport;
+    src: url('font/Transport_Heavy.ttf');
+}
+
 body {
     text-align: center;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: Transport;
+    background-image: url('img/background.jpg');
 }
 
 #outerbox {
@@ -8,7 +19,8 @@ body {
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
+    font-family: Druckschrift;
 }
 
 #intro {
@@ -52,4 +64,15 @@ h1 {
     width: 60%;
     margin: auto;
     margin-bottom: 1em;
+}
+
+#alfred {
+    height: 25em;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+#link {
+    color: rgb(17, 80, 255);
 }

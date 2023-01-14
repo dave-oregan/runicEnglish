@@ -3,7 +3,7 @@
   <head>
     <title>English Runes</title>
     <link rel=stylesheet href=style.css>
-    <link rel="shortcut icon" href=as_mask.png>
+    <link rel="shortcut icon" href=img/as_mask.png>
   </head>
   <body>
     <div id=outerbox>
@@ -12,7 +12,7 @@
           <form>
               <p id=intro>What would it be like if English still used a runic script, and not a latin one?</p>
               <p id=iLabel>Enter a word or phrase:</p>
-              <textarea type=text id=inputText onkeyup=convertToRunes()></textarea>
+              <textarea placeholder='Enter text here...' type=text id=inputText onkeyup=convertToRunes()></textarea>
           </form>
         </div>
         <p id=output></p>
@@ -76,12 +76,14 @@
     </script>
     <div id=foot>
       <p>Anglo-Saxon Runes, also known as Futhorc, was the writing system of the English language from the 5th century CE to the 11th/12th century CE, when it was then replaced by the latin script.</p>
-      <a href=https://en.wikipedia.org/wiki/Anglo-Saxon_runes>Learn More 
+      <a id=link href=https://en.wikipedia.org/wiki/Anglo-Saxon_runes>Learn More 
         <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="0.75em" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
           <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
         </svg>
       </a>
     </div>
+    <img id=alfred src=img/alfred.png>
+    <!-- Statue_d'Alfred_le_Grand_à_Winchester.jpg: Odejeaderivative work: KeepWatch, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons -->
   </body>
 </html>
