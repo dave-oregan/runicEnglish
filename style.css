@@ -64,6 +64,7 @@ h1 {
     width: 60%;
     margin: auto;
     margin-bottom: 1em;
+    font-size: 1.1em;
 }
 
 #alfred {
@@ -75,4 +76,5 @@ h1 {
 
 #link {
     color: rgb(17, 80, 255);
+    font-size: 1.1em;
 }
