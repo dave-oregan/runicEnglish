@@ -1,10 +1,10 @@
-#outerbox {
+body {
     text-align: center;
-    font-size: x-large;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-#english {
-    font-family: 'Trebuchet MS', sans-serif;
+#outerbox {
+    font-size: x-large;
 }
 
 h1 {
@@ -21,15 +21,35 @@ h1 {
 
 #inputText {
     font-size: 1em;
+    width: 68.5%;
+    resize: vertical;
+    padding: 0.1;
+    min-height: 4.7em;
+    padding-left: 0.3em;
+    padding-right: 0.2em;
 }
 
 #output {
     background-color: rgba(211, 211, 211, 0.317);
-    padding: 0.2em;
     font-size: 2.5em;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 68%;
+    padding: 0.1em;
+    margin: auto;
     white-space: initial;
     word-wrap: break-word;
+    min-height: 1.4em;
+    margin-top: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    vertical-align: middle;
+}
+
+#foot {
+    margin-top: 2.5em;
+}
+
+#foot p {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1em;
 }

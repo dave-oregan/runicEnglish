@@ -12,32 +12,32 @@
           <form>
               <p id=intro>What would it be like if English still used a runic script, and not a latin one?</p>
               <p id=iLabel>Enter a word or phrase:</p>
-              <input type=text id=inputText onkeyup=convertToRunes()>
+              <textarea type=text id=inputText onkeyup=convertToRunes()></textarea>
           </form>
         </div>
         <p id=output></p>
     </div>
     <script>
       const runeMap = {
-          'th' : 'ᚦ', 'ng' : 'ᛝ', 'ae' : 'ᛇ', 'ea' : 'ᛠ', 'qu' : 'ᛢ', 'cw' : 'ᛢ', 'st' : 'ᛥ',
-          'a': 'ᚪ', 'b': 'ᛒ', 'c': 'ᚳ', 'd': 'ᛞ',
+          'th' : 'ᚦ', 'ng' : 'ᛝ', 'ae' : 'ᚫ', 'ea' : 'ᛠ', 'qu' : 'ᛢ', 'cw' : 'ᛢ', 'st' : 'ᛥ', 'oe' :  'ᛟ', 'ee' : 'ᛇ',
+          'æ' : 'ᚫ', 'a': 'ᚪ', 'b': 'ᛒ', 'c': 'ᚳ', 'd': 'ᛞ',
           'e': 'ᛖ', 'f': 'ᚠ', 'g': 'ᚷ', 'h': 'ᚻ',
-          'i': 'ᛁ', 'j': 'ᛡ', 'k': 'ᛣ', 'l': 'ᛚ',
+          'i': 'ᛁ', 'j': 'ᛄ', 'k': 'ᛣ', 'l': 'ᛚ',
           'm': 'ᛗ', 'n': 'ᚾ', 'o': 'ᚩ', 'p': 'ᛈ',
           'q': 'ᛢ', 'r': 'ᚱ', 's': 'ᛋ', 't': 'ᛏ',
           'u': 'ᚢ', 'v': 'ᚡ', 'w': 'ᚹ', 'x': 'ᛉ',
-          'y': 'ᚣ', 'z': 'ᚴ',
-          'TH' : 'ᚦ', 'NG' : 'ᛝ', 'AE' : 'ᛇ', 'EA' : 'ᛠ', 'QU' : 'ᛢ', 'CW' : 'ᛢ', 'ST' : 'ᛥ',
-          'A': 'ᚪ', 'B': 'ᛒ', 'C': 'ᚳ', 'D': 'ᛞ',
+          'y': 'ᚣ', 'z': 'ᚴ', 'œ' :  'ᛟ',
+          'TH' : 'ᚦ', 'NG' : 'ᛝ', 'AE' : 'ᚫ', 'EA' : 'ᛠ', 'QU' : 'ᛢ', 'CW' : 'ᛢ', 'ST' : 'ᛥ', 'OE' :  'ᛟ', 'EE' : 'ᛇ',
+          'Æ' : 'ᚫ', 'A': 'ᚪ', 'B': 'ᛒ', 'C': 'ᚳ', 'D': 'ᛞ',
           'E': 'ᛖ', 'F': 'ᚠ', 'G': 'ᚷ', 'H': 'ᚻ',
-          'I': 'ᛁ', 'J': 'ᛡ', 'K': 'ᛣ', 'L': 'ᛚ',
+          'I': 'ᛁ', 'J': 'ᛄ', 'K': 'ᛣ', 'L': 'ᛚ',
           'M': 'ᛗ', 'N': 'ᚾ', 'O': 'ᚩ', 'P': 'ᛈ',
           'Q': 'ᛢ', 'R': 'ᚱ', 'S': 'ᛋ', 'T': 'ᛏ',
           'U': 'ᚢ', 'V': 'ᚡ', 'W': 'ᚹ', 'X': 'ᛉ',
-          'Y': 'ᚣ', 'Z': 'ᚴ',
-          'Th' : 'ᚦ', 'Ng' : 'ᛝ', 'Ae' : 'ᛇ', 'Ea' : 'ᛠ', 'Qu' : 'ᛢ', 'Cw' : 'ᛢ', 'St' : 'ᛥ',
-          'tH' : 'ᚦ', 'nG' : 'ᛝ', 'eA' : 'ᛇ', 'eA' : 'ᛠ', 'qU' : 'ᛢ', 'cW' : 'ᛢ', 'sT' : 'ᛥ',
-          '-' : '-'
+          'Y': 'ᚣ', 'Z': 'ᚴ', 'Œ' :  'ᛟ',
+          'Th' : 'ᚦ', 'Ng' : 'ᛝ', 'Ae' : 'ᚫ', 'Ea' : 'ᛠ', 'Qu' : 'ᛢ', 'Cw' : 'ᛢ', 'St' : 'ᛥ', 'Oe' :  'ᛟ', 'Ee' : 'ᛇ',
+          'tH' : 'ᚦ', 'nG' : 'ᛝ', 'aE' : 'ᚫ', 'eA' : 'ᛠ', 'qU' : 'ᛢ', 'cW' : 'ᛢ', 'sT' : 'ᛥ', 'oE' :  'ᛟ', 'eE' : 'ᛇ',
+          '-' : '-', '\n' : '<br>',
       };
 
       function convertToRunes() {
@@ -74,5 +74,14 @@
           document.getElementById('output').innerHTML = outputText
         }
     </script>
+    <div id=foot>
+      <p>Anglo-Saxon Runes, also known as Futhorc, was the writing system of the English language from the 5th century CE to the 11th/12th century CE, when it was then replaced by the latin script.</p>
+      <a href=https://en.wikipedia.org/wiki/Anglo-Saxon_runes>Learn More 
+        <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="0.75em" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+          <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+        </svg>
+      </a>
+    </div>
   </body>
 </html>
